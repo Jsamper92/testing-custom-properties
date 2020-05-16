@@ -1,0 +1,46 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+:root{
+    --width:0;
+    --color:red;
+    --red:0;
+    --green:0;
+    --blue:0;
+    --background-button:red;
+}
+body{
+    background: rgb(var(--red) var(--green) var(--blue));
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    text-transform: none;
+    background-color: var(--background-button);
+}
+
+.btn--red{
+    --background-button:red;
+}
+
+.btn--yellow{
+    --background-button:yellow;
+}
+
+.btn--blue{
+    --background-button:blue;
+}
+
+body::before{
+    content: '';
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: var(--width);
+    background-color: red;
+}
