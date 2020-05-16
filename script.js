@@ -23,7 +23,6 @@ let inputGreen = document.getElementById('green');
  * @param {object} e - Constante que dado un valor devuelve el valor 
  */
 const obtainValue = e => {
-    console.log(typeof e)
     return e.target.value;
 }
 
